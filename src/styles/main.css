@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #fcfcfc;
+}
+
+a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+nav{
+    position: sticky; 
+    top: 0;
+}
+
+/* ----------------------------------------- Title Bar ----------------------------------------- */
+#title-bar{
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#title-bar #project-title{
+    color: #c9c9c9;
+    flex-grow: 1; 
+    text-align: center; 
+    text-decoration: none;
+}
+
+#title-bar #window-icons{
+    display: flex;
+    gap: 10px; 
+}
+
+/* ----------------------------------------- Project Tabs ----------------------------------------- */
+
+#project-tabs ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #2d2d2d;
+    height: 3.5rem;
+}
+
+#project-tabs ul li{
+    color: #c9c9c9;
+    font-size: 13px;
+    cursor: pointer;
+    width: 8rem;
+}
+#project-tabs ul li:has(.active-tab){
+    border-top: 2px solid #6b89a0;
+    background-color: #1e1e1e;
+}
+
+#project-tabs ul li a{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-tabs ul li a.active-tab{
+    color: #6b89a0 !important;
+   
+}
+
+/* ----------------------------------------- Hello.html Page ----------------------------------------- */
+
+.container-flex{
+    display: flex;
+}
+
+#hello-page{
+    background-color: #1e1e1e;
+    display: flex;
+}
+
+.coding-editor-lines{
+    display: flex;
+}
+
+.row-number{
+    color: #838283;
+    font-size: 13px;
+    padding-left: 6rem;
+    padding-bottom: 0.1rem;
+}
+
+.horizontal-line{
+    border: 1px solid #838283;
+    margin-left: 2rem;
+}
+
+.introduction-container{
+    margin-left: 2rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 40%;
+}
+
+.introduction{
+    color: #fcfcfc;
+    font-size: 1.5rem;
+}
+
+.introduction-fullname{
+    color: #fcfcfc;
+    font-size: 4rem;
+}
+
+.introduction-title{
+    color: #6b89a0;
+    font-size: 1rem;
+}
+
+
+.dev-image{
+    width: 500px;
+    height: auto;
+    padding: 7rem;
+    min-width: 200px;
+}
+
+#image-div img {
+    width: 80%; 
+    height: auto; 
+    display: flex; 
+    align-content: center; 
+    flex-wrap: wrap; 
+    object-fit: contain;
+}
+
+/* ----------------------------------------- Contact Me ----------------------------------------- */
+
+.contact-me{
+    background-color: #333;
+    color: #fff;
+    padding: 0.4rem;
+    display: flex;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    
+}
+
+.contact-me p{
+    margin-right: 0.5rem;
+}
+
+
+.connect-apps{
+    width: 21px;
+    margin: 0 5px;
+}
+
+.connect-apps img{
+    width: 100%;
+}
+
+/* ----------------------------------------- About Me ----------------------------------------- */
+
+#about-me-main-container{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+#about-page-container{
+    margin-bottom: 4rem;
+}
+
+.about-me-title{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.my-skills-title{
+    margin-top: 2rem;
+}
+
+.about-me-container{
+    display: flex;
+}
+
+.about-me-info{
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    width: 60%;
+}
+
+.about-me-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 600px; 
+}
+
+.about-me-image img{
+    height: 17rem;
+    object-fit: contain;
+}
+
+#qoute-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.favorite-qoute-title{
+    font-size: 18px;
+}
+
+.favorite-qoute{
+    margin-top: 0.5rem;
+}
+
+.skills-seperation-bar{
+    color: #838283;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
+.skill-group{
+    color: #6b89a0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.typing-line {
+  font-size: 1rem;
+  font-family: monospace;
+  color: #fff;
+  margin-top: 1rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: #838283;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+/* ----------------------------------------- Responsivity ----------------------------------------- */
+@media only screen and (min-width: 1600px) {
+    .introduction-container {
+        display: block;
+    }
+
+    .container-flex {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #image-div {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    #image-div {
+        display: none;
+   }
+
+   #qoute-container{
+        display: none;
+   }
+
+    #project-tabs ul li{
+        padding: 2% 3%;
+    }
+
+    .horizontal-line{
+        margin-left: 1.5rem;
+    }
+
+    .row-number{
+        padding-left: 4rem;
+    }
+
+    .introduction-fullname{
+        font-size: 3.5rem;
+    }
+
+    .about-me-container{
+        flex-direction: column-reverse;
+    }
+
+    .about-me-image{
+        width: 100%;
+    }
+
+    .about-me-image img{
+        justify-content: center;
+        height: 11rem;
+        margin-top: 1rem;
+    }
+
+
+    .about-me-info{
+        width: 80%;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+    #project-tabs ul li{
+        padding: 3%;
+    }
+
+    .row-number{
+        padding-left: 2rem;
+    }
+
+    .horizontal-line{
+        margin-left: 1rem;
+    }
+
+    .introduction{
+        font-size: 0.8rem;
+    }
+
+    .introduction-fullname{
+        font-size: 1.5rem;
+    }
+
+    .introduction-title{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 680px) {
+
+    .introduction{
+        font-size: 1.3rem;
+    }
+
+    .introduction-fullname{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .introduction-fullname{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .introduction-fullname{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+
+    .introduction{
+        font-size: 1rem;
+    }
+
+    .introduction-fullname{
+        font-size: 1.7rem;
+    }
+
+    .introduction-title{
+        font-size: 0.8rem;
+    }
+}
+
+

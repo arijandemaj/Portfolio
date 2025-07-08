@@ -88,7 +88,7 @@ function About() {
                   XML
                 </p>
                 <p className="skill-group">Frameworks & Libraries</p>
-                <p className="skills-container">
+                <p className="skills-container without-bars-mobile">
                   .NET Core 
                   <span className="skills-seperation-bar">|</span> 
                   .NET Framework 
@@ -99,7 +99,9 @@ function About() {
                   <br></br>
                   Entity Framework Core
                   <span className="skills-seperation-bar">|</span>
-                  JQuery 
+                  React.js
+                  <span className="skills-seperation-bar">|</span>
+                  JQuery
                 </p>
                 <p className="skill-group">Databases & Deployment</p>
                 <p className="skills-container">

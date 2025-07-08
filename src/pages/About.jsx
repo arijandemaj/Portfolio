@@ -114,8 +114,8 @@ function About() {
                   <p className="favorite-qoute-title">Favorite Quote:</p>
                   <TypeWriter 
                       text="Talk is cheap. Show me the code. - Linus Torvalds"
-                      writingSpeed={100}
-                      deletingSpeed={150}
+                      writingSpeed={150}
+                      deletingSpeed={100}
                       haltSpeed={2000}
                   />
                 </div>

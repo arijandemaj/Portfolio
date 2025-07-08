@@ -1,6 +1,6 @@
-# 💼 Arijan's Developer Portfolio
+# 💼 My Portfolio
 
-This is my personal portfolio site where I showcase my development projects, skills, and experience.
+This is my VS Code inspired portfolio site where I showcase my development projects, skills, and experience.
 
 ## 🚀 Tech Stack
 - React (with Vite)

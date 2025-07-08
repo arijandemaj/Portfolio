@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import TypeWriter from '../components/TypeWriter';
 import selfieImage from '/images/about-me-picture.png'
 
 const GenerateRange = (start, end) => {
@@ -111,7 +112,12 @@ function About() {
                 <img src={selfieImage} alt="about-me-picture"/>
                 <div id="qoute-container">
                   <p className="favorite-qoute-title">Favorite Quote:</p>
-                  <p className="favorite-qoute">"Talk is cheap. Show me the code." - Linus Torvalds</p>
+                  <TypeWriter 
+                      text="Talk is cheap. Show me the code. - Linus Torvalds"
+                      writingSpeed={100}
+                      deletingSpeed={150}
+                      haltSpeed={2000}
+                  />
                 </div>
               </div>
             </div>

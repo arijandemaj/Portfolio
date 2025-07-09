@@ -265,7 +265,9 @@ nav{
 
 
 /* ----------------------------------------- Responsivity ----------------------------------------- */
+
 @media only screen and (min-width: 1600px) {
+
     .introduction-container {
         display: block;
     }
@@ -349,6 +351,10 @@ nav{
         flex: 1;
     }
 
+    .hide-on-mobile{
+        display: none;
+    }
+
     #project-tabs ul li{
         padding: 3%;
     }
@@ -360,20 +366,56 @@ nav{
     .horizontal-line{
         margin-left: 1rem;
     }
+    
+}
+
+/* ----------------------------------------- Introduction Responsivity ----------------------------------------- */
+
+@media (max-width: 320px) {
 
     .introduction{
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 
     .introduction-fullname{
+        font-size: 2rem;
+    }
+
+    .introduction-title{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+
+    .introduction{
         font-size: 1.5rem;
+    }
+
+    .introduction-fullname{
+        font-size: 2.3rem;
+    }
+
+    .introduction-title{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+
+    .introduction{
+        font-size: 1rem;
+    }
+
+    .introduction-fullname{
+        font-size: 1.7rem;
     }
 
     .introduction-title{
         font-size: 0.8rem;
     }
-    
 }
+
 
 
 @media only screen and (max-width: 680px) {
@@ -401,19 +443,6 @@ nav{
     }
 }
 
-@media only screen and (max-width: 472px) {
 
-    .introduction{
-        font-size: 1rem;
-    }
-
-    .introduction-fullname{
-        font-size: 1.7rem;
-    }
-
-    .introduction-title{
-        font-size: 0.8rem;
-    }
-}
 
 

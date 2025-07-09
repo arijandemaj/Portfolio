@@ -42,7 +42,7 @@ function Home() {
             <div className="horizontal-line" style={{height: '27rem', marginTop: '6.5rem'}}></div>
             <div className="horizontal-line" style={{height: '23rem', marginTop: '9rem'}}></div>
             <div className="horizontal-line" style={{height: '18rem', marginTop: '11rem'}}></div>
-            <div className="horizontal-line" style={{height: '11rem', marginTop: '14rem'}}></div>
+            <div className="horizontal-line hide-on-mobile" style={{height: '11rem', marginTop: '14rem'}}></div>
           </div>
          </div>
          <div className="introduction-container">

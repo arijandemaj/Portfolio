@@ -344,6 +344,11 @@ nav{
 
 
 @media only screen and (max-width: 425px) {
+
+    .introduction-container{
+        flex: 1;
+    }
+
     #project-tabs ul li{
         padding: 3%;
     }
@@ -367,7 +372,7 @@ nav{
     .introduction-title{
         font-size: 0.8rem;
     }
-
+    
 }
 
 

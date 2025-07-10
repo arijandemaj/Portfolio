@@ -414,6 +414,10 @@ nav{
     .introduction-title{
         font-size: 0.8rem;
     }
+
+    .introduction-container{
+        transform: translateY(-4%);
+    }
 }
 
 

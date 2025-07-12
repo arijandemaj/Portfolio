@@ -68,7 +68,7 @@ function About() {
                 <h2 className="my-skills-title">My Skills</h2>
 
                 <p className="skill-group">Programming Languages</p>
-                <p className="skills-container">
+                <p className="skills-container without-bars-mobile">
                   C# 
                   <span className="skills-seperation-bar">|</span> 
                   SQL 
@@ -77,17 +77,17 @@ function About() {
                   <span className="skills-seperation-bar">|</span> 
                   Python
                 </p>
-                <p className="skill-group">Markup & Data Formats</p>
-                <p className="skills-container">
+                <p className="skill-group">Frontend Technologies</p>
+                <p className="skills-container without-bars-mobile">
                   HTML 
                   <span className="skills-seperation-bar">|</span> 
                   CSS 
                   <span className="skills-seperation-bar">|</span>
-                  JSON
+                  React.js
                   <span className="skills-seperation-bar">|</span> 
-                  XML
+                  jQuery
                 </p>
-                <p className="skill-group">Frameworks & Libraries</p>
+                <p className="skill-group">Backend Technologies</p>
                 <p className="skills-container without-bars-mobile">
                   .NET Core 
                   <span className="skills-seperation-bar">|</span> 
@@ -98,17 +98,30 @@ function About() {
                   ASP.NET Web API
                   <br></br>
                   Entity Framework Core
-                  <span className="skills-seperation-bar">|</span>
-                  React.js
-                  <span className="skills-seperation-bar">|</span>
-                  JQuery
                 </p>
-                <p className="skill-group">Databases & Deployment</p>
+                <p className="skill-group">Databases</p>
                 <p className="skills-container">
                   Microsoft SQL Server
-                  <span className="skills-seperation-bar">|</span>
-                  IIS
                 </p>  
+                <p className="skill-group">Deployment & Tools</p>
+                <p className="skills-container without-bars-mobile">
+                  IIS
+                  <span className="skills-seperation-bar">|</span>
+                  Git
+                  <span className="skills-seperation-bar">|</span>
+                  SVN
+                  <span className="skills-seperation-bar">|</span>
+                  Postman
+                  <span className="skills-seperation-bar">|</span>
+                  Vercel
+                </p>  
+                <p className="skill-group">Cloud Platforms</p>
+                <p className="skills-container without-bars-mobile">
+                  AWS
+                  <span className="skills-seperation-bar">|</span>
+                  Azure
+                </p>  
+
               </div>
               <div className="about-me-image">
                 <img src={selfieImage} alt="about-me-picture"/>

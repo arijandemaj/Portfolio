@@ -115,12 +115,6 @@ function About() {
                   <span className="skills-seperation-bar">|</span>
                   Vercel
                 </p>  
-                <p className="skill-group">Cloud Platforms</p>
-                <p className="skills-container without-bars-mobile">
-                  AWS
-                  <span className="skills-seperation-bar">|</span>
-                  Azure
-                </p>  
 
               </div>
               <div className="about-me-image">

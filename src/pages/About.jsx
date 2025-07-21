@@ -77,16 +77,6 @@ function About() {
                   <span className="skills-seperation-bar">|</span> 
                   Python
                 </p>
-                <p className="skill-group">Frontend Technologies</p>
-                <p className="skills-container without-bars-mobile">
-                  HTML 
-                  <span className="skills-seperation-bar">|</span> 
-                  CSS 
-                  <span className="skills-seperation-bar">|</span>
-                  React.js
-                  <span className="skills-seperation-bar">|</span> 
-                  jQuery
-                </p>
                 <p className="skill-group">Backend Technologies</p>
                 <p className="skills-container without-bars-mobile">
                   .NET Core 
@@ -98,6 +88,16 @@ function About() {
                   ASP.NET Web API
                   <br></br>
                   Entity Framework Core
+                </p>
+                <p className="skill-group">Frontend Technologies</p>
+                <p className="skills-container without-bars-mobile">
+                  HTML 
+                  <span className="skills-seperation-bar">|</span> 
+                  CSS 
+                  <span className="skills-seperation-bar">|</span>
+                  React.js
+                  <span className="skills-seperation-bar">|</span> 
+                  jQuery
                 </p>
                 <p className="skill-group">Databases</p>
                 <p className="skills-container">

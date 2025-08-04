@@ -68,7 +68,10 @@ function TerminalLoadingScreen({onAnimationFinish}){
         }
 
 
-        cdCommandFunction();
+        setTimeout(() => {
+            cdCommandFunction();
+        }, 200)
+        
 
         return () => {
             

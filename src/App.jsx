@@ -13,32 +13,27 @@ import { useEffect, useState } from "react";
 function App() {
 
   const [isLoading, setIsLoading] = useState(true)
-
-  if(isLoading){
+ 
     return (
       <>
-        <TerminalLoadingScreen onAnimationFinish={(done) => setIsLoading(!done) } />
-        <Analytics/>
+        {isLoading ? (
+          <TerminalLoadingScreen onAnimationFinish={(done) => setIsLoading(!done) } />
+        ) : (
+          <>
+            <Header />
+            <main>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+              </Routes>
+            </main>
+            <Footer />
+          </>
+        )}
+          <Analytics />
       </>
     );
-  }
-  else{
-   return (
-      <>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </main>
-        <Footer /> 
-        <Analytics/>
-      </>
-    );
-  }
-
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import windowIcons from '/icons/linux-mint-icons.png'
 
 
 function TerminalLoadingScreen({onAnimationFinish}){
@@ -58,7 +59,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                 {
                     clearInterval(vsCodeCommandIntervalRef.current)
                     setTimeout(() => {
-                        onAnimationFinish(true)
+                        onAnimationFinish(false)
                     }, 1000)
                     
                 }
@@ -84,6 +85,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
             <div id="terminal-window">
                 <div id="terminal-header">
                     <p id="terminal-title">{machineName} ~</p>
+                    <img src={windowIcons} width="100" alt="window-icons"/>
                 </div>
                 <div id="terminal-body">
                     <div className='terminal-commands'>

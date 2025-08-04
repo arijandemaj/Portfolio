@@ -39,7 +39,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                     commandCursorRef.current.style.visibility = "hidden"
                     setTimeout(() => {
                         openVSCodeCommandFunction();
-                    }, 200);
+                    }, 400);
                 }
 
             }, 150);
@@ -60,7 +60,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                     clearInterval(vsCodeCommandIntervalRef.current)
                     setTimeout(() => {
                         onAnimationFinish(true)
-                    }, 1500)
+                    }, 1200)
                     
                 }
 

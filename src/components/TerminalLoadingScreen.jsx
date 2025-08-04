@@ -60,7 +60,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                     clearInterval(vsCodeCommandIntervalRef.current)
                     setTimeout(() => {
                         onAnimationFinish(true)
-                    }, 1000)
+                    }, 1500)
                     
                 }
 

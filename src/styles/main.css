@@ -267,17 +267,15 @@ nav{
 /* ----------------------------------------- Terminal Loading Screen ----------------------------------------- */
 
 #terminal-container {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  background-image: url('/images/linux-mint-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background: #5c5b5b;
+    background: radial-gradient(circle, rgba(92, 91, 91, 1) 0%, rgba(7, 7, 7, 1) 100%);
 }
 
 
@@ -296,7 +294,7 @@ nav{
     flex-grow: 1; 
     text-align: center;
     font-weight: bold;
-    
+    letter-spacing: 1px;
 }
 
 #terminal-header p, #terminal-toolbar p{

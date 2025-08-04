@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import linuxWindowIcons from '/icons/linux-mint-icons.png'
 
 
 function TerminalLoadingScreen({onAnimationFinish}){
@@ -42,7 +41,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                     }, 200);
                 }
 
-            }, 100);
+            }, 150);
         }
         
         const openVSCodeCommandFunction = () => {
@@ -64,7 +63,7 @@ function TerminalLoadingScreen({onAnimationFinish}){
                     
                 }
 
-            }, 100);
+            }, 150);
         }
 
 
@@ -74,10 +73,8 @@ function TerminalLoadingScreen({onAnimationFinish}){
         
 
         return () => {
-            
             clearInterval(cdCommandIntervalRef.current);
             clearInterval(vsCodeCommandIntervalRef.current)
-          
         }
 
     }, [])
@@ -87,7 +84,6 @@ function TerminalLoadingScreen({onAnimationFinish}){
             <div id="terminal-window">
                 <div id="terminal-header">
                     <p id="terminal-title">{machineName} ~</p>
-                    <img src={linuxWindowIcons} width="80" alt="linux-mint-icons" id="linux-mint-icons"/>
                 </div>
                 <div id="terminal-body">
                     <div className='terminal-commands'>

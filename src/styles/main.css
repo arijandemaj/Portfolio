@@ -264,6 +264,67 @@ nav{
 }
 
 
+/* ----------------------------------------- Terminal Loading Screen ----------------------------------------- */
+
+#terminal-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('/images/linux-mint-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#terminal-window{
+    width: 45rem;
+}
+
+#terminal-header{
+    display: flex;
+    background-color: #d8dad6;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#terminal-title{
+    flex-grow: 1; 
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#terminal-header p, #terminal-toolbar p{
+    color: #969696;
+}
+
+#terminal-body{
+    height: 25rem;
+    background-color: rgba(30,30,30,0.85);
+    backdrop-filter: blur(8px)
+}
+
+.terminal-commands{
+    display: flex;
+}
+
+.terminal-command-title{
+    color: #6cc930;
+    padding-right: 10px;
+}
+
+.terminal-pre-command{
+    color: #647f9a;
+    padding-right: 10px;
+}
+
+
+
 /* ----------------------------------------- Responsivity ----------------------------------------- */
 
 @media only screen and (min-width: 1600px) {
@@ -287,6 +348,7 @@ nav{
 }
 
 @media only screen and (max-width: 768px) {
+
 
     #image-div {
         display: none;
@@ -342,6 +404,12 @@ nav{
         content: "\A";
     }
 
+    #terminal-window{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+
 }
 
 
@@ -368,6 +436,8 @@ nav{
     }
     
 }
+
+
 
 /* ----------------------------------------- Introduction Responsivity ----------------------------------------- */
 
@@ -422,6 +492,8 @@ nav{
     .introduction-container{
         transform: translateY(-3%);
     }
+
+  
 }
 
 
@@ -449,8 +521,11 @@ nav{
     .introduction-fullname{
         font-size: 2rem;
     }
-}
 
+      #terminal-body{
+        height: 20rem;
+    }
+}
 
 
 

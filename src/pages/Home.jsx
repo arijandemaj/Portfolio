@@ -49,7 +49,9 @@ function Home() {
          </div>
           */
         }
-        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
          <div className="introduction-container">
             <h4 className="introduction">Hello, i am</h4>
             <h1 className="introduction-fullname">Arijan Demaj</h1>

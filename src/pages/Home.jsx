@@ -3,7 +3,7 @@ import devImage from '/images/dev-image.png'
 function Home() {
   return (
     <div id="hello-page">
-       <div className="container-flex">
+       <div className="container-flex" style={{marginBottom: '5rem'}}>
          <div style={{display: 'flex'}}>
           <div>
             <p className="row-number" style={{paddingTop: '1rem'}}>1</p>
@@ -50,12 +50,9 @@ function Home() {
             <h1 className="introduction-fullname">Arijan Demaj</h1>
             <h4 className="introduction-title">Software Developer</h4>
          </div>
-         {/*
-             <div id="image-div">
+          <div id="image-div">
             <img src={devImage} alt='dev-image'/>
           </div>
-         */}
-     
        </div>
     </div>
   );

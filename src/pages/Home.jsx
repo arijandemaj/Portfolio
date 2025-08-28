@@ -2,9 +2,11 @@ import devImage from '/images/dev-image.png'
 
 function Home() {
   return (
-    <div id="hello-page">
-       <div className="container-flex" style={{marginBottom: '5rem'}}>
-         <div style={{display: 'flex'}}>
+    <div id="hello-page" style={{marginBottom: '10rem'}}>
+       <div className="container-flex">
+        {
+          /*
+           <div style={{display: 'flex'}}>
           <div>
             <p className="row-number" style={{paddingTop: '1rem'}}>1</p>
             <p className="row-number">2</p>
@@ -45,6 +47,9 @@ function Home() {
             <div className="horizontal-line hide-on-mobile" style={{height: '11rem', marginTop: '14rem'}}></div>
           </div>
          </div>
+          */
+        }
+        
          <div className="introduction-container">
             <h4 className="introduction">Hello, i am</h4>
             <h1 className="introduction-fullname">Arijan Demaj</h1>

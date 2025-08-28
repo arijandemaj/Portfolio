@@ -50,9 +50,12 @@ function Home() {
             <h1 className="introduction-fullname">Arijan Demaj</h1>
             <h4 className="introduction-title">Software Developer</h4>
          </div>
-         <div id="image-div">
+         {/*
+             <div id="image-div">
             <img src={devImage} alt='dev-image'/>
           </div>
+         */}
+     
        </div>
     </div>
   );

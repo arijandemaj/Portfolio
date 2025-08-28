@@ -6,6 +6,9 @@ function Home() {
        <div className="container-flex">
          <div style={{display: 'flex'}}>
           
+          {
+          
+          /*
           <div>
             <p className="row-number" style={{paddingTop: '1rem'}}>1</p>
             <p className="row-number">2</p>
@@ -38,7 +41,6 @@ function Home() {
             <p className="row-number">29</p>
             <p className="row-number" style={{paddingBottom: '1rem'}}>30</p>
           </div>
-          {/*
               <div className="coding-editor-lines">
             <div className="horizontal-line" style={{height: '31.5rem', marginTop: '4rem', marginBottom: '4rem'}}></div>
             <div className="horizontal-line" style={{height: '27rem', marginTop: '6.5rem'}}></div>

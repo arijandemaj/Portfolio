@@ -330,7 +330,7 @@ nav{
 #projects-main-container{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 10rem;
+    
 }
 
 #projects-title{
@@ -346,6 +346,7 @@ nav{
 #projects-list{
     margin-left: 3rem;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .project-item-header{
@@ -381,6 +382,7 @@ nav{
 .project-description{
     max-width: 900px;
     white-space: normal;
+    padding-right: 0.2rem;
 }
 
 .show-project-button{
@@ -580,6 +582,12 @@ nav{
     #projects-list {
         margin-left: 1rem;
     }
+
+    .project-item-content {
+        margin-left: 1rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {

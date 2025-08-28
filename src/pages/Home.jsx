@@ -2,7 +2,7 @@ import devImage from '/images/dev-image.png'
 
 function Home() {
   return (
-    <div id="hello-page" style={{marginBottom: '10rem'}}>
+    <div id="hello-page" style={{marginBottom: '20rem'}}>
        <div className="container-flex">
         {
           /*

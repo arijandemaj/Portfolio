@@ -4,12 +4,6 @@
     font-family: 'Fira Code', monospace;
 }
 
-.row-number,
-.coding-editor-lines,
-.horizontal-line {
-  pointer-events: none;
-}
-
 body {
     background-color: #1e1e1e;
 }
@@ -26,6 +20,7 @@ a{
 nav{
     position: sticky; 
     top: 0;
+    z-index: 9999;
 }
 
 /* ----------------------------------------- Title Bar ----------------------------------------- */

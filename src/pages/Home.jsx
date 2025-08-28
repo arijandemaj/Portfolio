@@ -2,11 +2,10 @@ import devImage from '/images/dev-image.png'
 
 function Home() {
   return (
-    <div id="hello-page" style={{marginBottom: '20rem'}}>
+    <div id="hello-page">
        <div className="container-flex">
-        {
-          /*
-           <div style={{display: 'flex'}}>
+         <div style={{display: 'flex'}}>
+          {/*
           <div>
             <p className="row-number" style={{paddingTop: '1rem'}}>1</p>
             <p className="row-number">2</p>
@@ -38,7 +37,8 @@ function Home() {
             <p className="row-number">28</p>
             <p className="row-number">29</p>
             <p className="row-number" style={{paddingBottom: '1rem'}}>30</p>
-          </div>
+          </div>*/}
+          
           <div className="coding-editor-lines">
             <div className="horizontal-line" style={{height: '31.5rem', marginTop: '4rem', marginBottom: '4rem'}}></div>
             <div className="horizontal-line" style={{height: '27rem', marginTop: '6.5rem'}}></div>
@@ -47,17 +47,12 @@ function Home() {
             <div className="horizontal-line hide-on-mobile" style={{height: '11rem', marginTop: '14rem'}}></div>
           </div>
          </div>
-          */
-        }
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi non impedit quibusdam dolorum cumque commodi quis delectus ratione distinctio beatae debitis sit exercitationem laboriosam praesentium sed facilis, aperiam deleniti hic!</p>
          <div className="introduction-container">
             <h4 className="introduction">Hello, i am</h4>
             <h1 className="introduction-fullname">Arijan Demaj</h1>
             <h4 className="introduction-title">Software Developer</h4>
          </div>
-          <div id="image-div">
+         <div id="image-div">
             <img src={devImage} alt='dev-image'/>
           </div>
        </div>

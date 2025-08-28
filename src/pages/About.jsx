@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import TypeWriter from '../components/TypeWriter';
 import selfieImage from '/images/about-me-picture.png'
-
-const GenerateRange = (start, end) => {
-  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
-}
+import { GenerateRange } from '../utilities/GenerateNumbers';
 
 function About() {
 

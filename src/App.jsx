@@ -2,6 +2,7 @@ import { Routes, Route, useSearchParams } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TerminalLoadingScreen from './components/TerminalLoadingScreen';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -20,6 +21,7 @@ function App() {
           <TerminalLoadingScreen onAnimationFinish={(done) => setIsLoading(!done) } />
         ) : (
           <>
+            <ScrollToTop/>
             <Header />
             <main>
               <Routes>
